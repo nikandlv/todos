@@ -1,9 +1,9 @@
 import * as React from 'react'
 
 export interface IWrapperProps {
-    children: React.ReactChild
+    children: React.ReactChild[]
 }
 
 export default function Wrapper(props: IWrapperProps) {
-    return <>{props.children}</>
+    return <div>{props.children}</div>
 }

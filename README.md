@@ -17,7 +17,7 @@ yet another todo list web app written using ReactJS
 -   [x] List of todos
 -   [x] Add todos
 -   [x] Check todos
--   [ ] Delete Todos
+-   [x] Delete Todos
 -   [ ] Filter todos
 
 ## Demo

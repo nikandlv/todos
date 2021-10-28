@@ -23,10 +23,20 @@ export default function Todos({ todos, setTodos }: ITodosProps) {
         [todos, setTodos]
     )
 
+    const deleteTodo = useCallback(
+        (id: number) => setTodos(todos.filter((todo) => todo.id !== id)),
+        [todos, setTodos]
+    )
+
     return (
         <div>
             {todos.map((todo) => (
-                <Todo onChange={checkTodo} key={todo.id} {...todo} />
+                <Todo
+                    key={todo.id}
+                    onChange={checkTodo}
+                    onDelete={deleteTodo}
+                    {...todo}
+                />
             ))}
         </div>
     )

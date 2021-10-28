@@ -16,7 +16,7 @@ yet another todo list web app written using ReactJS
 -   [x] Add mock data
 -   [x] List of todos
 -   [x] Add todos
--   [ ] Check todos
+-   [x] Check todos
 -   [ ] Delete Todos
 -   [ ] Filter todos
 

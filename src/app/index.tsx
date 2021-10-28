@@ -8,7 +8,7 @@ export default function App() {
     const [todos, setTodos] = useState(ExampleTodos)
     return (
         <Wrapper>
-            <Todos todos={todos} />
+            <Todos todos={todos} setTodos={setTodos} />
             <TodoForm todos={todos} setTodos={setTodos} />
         </Wrapper>
     )

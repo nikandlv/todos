@@ -1,14 +1,32 @@
 import { ITodoList } from 'app/Types/Todo'
 import Todo from 'app/Components/Todo'
+import { useCallback } from 'react'
 export interface ITodosProps {
     todos: ITodoList
+    setTodos: (todos: ITodoList) => void
 }
 
-export default function Todos({ todos }: ITodosProps) {
+export default function Todos({ todos, setTodos }: ITodosProps) {
+    const checkTodo = useCallback(
+        (id: number, checked: boolean) =>
+            setTodos(
+                todos.map((todo) => {
+                    if (todo.id === id) {
+                        return {
+                            ...todo,
+                            checked,
+                        }
+                    }
+                    return todo
+                })
+            ),
+        [todos, setTodos]
+    )
+
     return (
         <div>
             {todos.map((todo) => (
-                <Todo key={todo.id} {...todo} />
+                <Todo onChange={checkTodo} key={todo.id} {...todo} />
             ))}
         </div>
     )

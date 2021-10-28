@@ -20,6 +20,10 @@ yet another todo list web app written using ReactJS
 -   [ ] Delete Todos
 -   [ ] Filter todos
 
+## Demo
+
+Visit [Todos Demo](http://nikandlv.github.io/todos)
+
 ## How to use
 
 #### Clone the project

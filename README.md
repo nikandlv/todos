@@ -46,7 +46,7 @@ yet another todo list web app written using ReactJS
 
 ## Documentation
 
-Todos has two main topics for documentations
+Todos has three main topics for documentations
 
 #### Storybook
 
@@ -71,6 +71,14 @@ Todos! has support for storybook for documentation and previews of the component
 
 -   `Components` contains the components of our project
 -   `Layouts` contains the layouts and containers of our project
+
+#### Branching and versioning
+
+-   `master` should be the production and latest stable version
+-   `dev` should be the latest development updates and staging
+-   `feature/**` should be the features development
+-   `bugfix/**` should be the bugfix branches
+-   `hotfix/**` should be the hotfix branches
 
 ## LICENCE
 

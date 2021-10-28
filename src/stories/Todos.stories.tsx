@@ -13,10 +13,12 @@ const Template: ComponentStory<typeof Todos> = (args) => <Todos {...args} />
 export const FilledList = Template.bind({})
 FilledList.args = {
     todos: ExampleTodos,
+    list: ExampleTodos,
 }
 
 export const EmptyList = Template.bind({})
 EmptyList.args = {
     todos: [],
+    list: [],
     setTodos: (_: ITodoList) => {},
 }

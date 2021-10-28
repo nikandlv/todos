@@ -3,10 +3,11 @@ import Todo from 'app/Components/Todo'
 import { useCallback } from 'react'
 export interface ITodosProps {
     todos: ITodoList
+    list: ITodoList
     setTodos: (todos: ITodoList) => void
 }
 
-export default function Todos({ todos, setTodos }: ITodosProps) {
+export default function Todos({ todos, list, setTodos }: ITodosProps) {
     const checkTodo = useCallback(
         (id: number, checked: boolean) =>
             setTodos(
@@ -30,7 +31,7 @@ export default function Todos({ todos, setTodos }: ITodosProps) {
 
     return (
         <div>
-            {todos.map((todo) => (
+            {list.map((todo) => (
                 <Todo
                     key={todo.id}
                     onChange={checkTodo}

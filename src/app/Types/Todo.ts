@@ -1,7 +1,7 @@
-export interface Todo {
+export interface ITodo {
     id: number
     title: string
     checked: boolean
 }
 
-export type TodoList = Array<Todo>
+export type ITodoList = Array<ITodo>

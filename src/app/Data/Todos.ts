@@ -1,5 +1,5 @@
-import { TodoList } from 'app/Types/Todo'
-const Todos: TodoList = [
+import { ITodoList } from 'app/Types/Todo'
+const ExampleTodos: ITodoList = [
     {
         id: 1,
         title: 'First example',
@@ -17,4 +17,4 @@ const Todos: TodoList = [
     },
 ]
 
-export default Todos
+export default ExampleTodos

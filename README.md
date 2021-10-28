@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+# Todos!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+yet another todo list web app written using ReactJS
 
-## Available Scripts
+> “Not only should you have a to-do list, but it must become your best friend.” — Jim Kwik
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+-   Storybook documentation
+-   Typescript
+-   List todos
+-   Add/Remove/Check todos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Progress
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   [ ] Add mock data
+-   [ ] List of todos
+-   [ ] Add todos
+-   [ ] Check todos
+-   [ ] Delete Todos
+-   [ ] Filter todos
 
-### `npm test`
+## How to use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Clone the project
 
-### `npm run build`
+**using https**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`https://github.com/nikandlv/todos.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**using ssh**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`git@github.com:nikandlv/todos.git`
 
-### `npm run eject`
+#### Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`npm install`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Run the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`npm start`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Building
 
-## Learn More
+`npm run build`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Documentation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Todos has two main topics for documentations
+
+#### Storybook
+
+Todos! has support for storybook for documentation and previews of the components to run it simply:
+
+**Development mode**
+
+`npm run storybook`
+
+**Production build**
+
+`yarn run bulid-storybook`
+
+#### Project structure
+
+##### `src` directory contains two main subdirectories
+
+-   `app` contains the application itself
+-   `stories` contains the documentation for components
+
+##### `src/app` directory contains the application sections
+
+-   `Components` contains the components of our project
+-   `Layouts` contains the layouts and containers of our project
+
+## LICENCE
+
+Apache License, Version 2.0

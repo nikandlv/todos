@@ -5,10 +5,10 @@ import TodoFilter from './Layouts/TodoFilter'
 import TodoForm from './Layouts/TodoForm'
 import Todos from './Layouts/Todos'
 import Wrapper from './Layouts/Wrapper'
-import { ITodoFilter } from './Types/Filters'
+import { TodoFilterType } from './Types/Filters'
 
 export default function App() {
-    const [mode, setMode] = useState<ITodoFilter>('all')
+    const [mode, setMode] = useState<TodoFilterType>('all')
     const [todos, setTodos] = useState(ExampleTodos)
     const filterdTodo = useTodoFilterByMode(todos, mode)
     return (

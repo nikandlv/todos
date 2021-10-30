@@ -1,10 +1,10 @@
-import { ITodoFilter } from 'app/Types/Filters'
-import { ITodoList } from 'app/Types/Todo'
+import { TodoFilterType } from 'app/Types/Filters'
+import { TodoListType } from 'app/Types/Todo'
 import { useMemo } from 'react'
 
 export default function useTodoFilterByMode(
-    todos: ITodoList,
-    mode: ITodoFilter
+    todos: TodoListType,
+    mode: TodoFilterType
 ) {
     return useMemo(() => {
         if (mode === 'all') {

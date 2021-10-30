@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { ITodoFilter } from 'app/Types/Filters'
+import { TodoFilterType } from 'app/Types/Filters'
 import TodoFilter from '../app/Layouts/TodoFilter'
 
 export default {
@@ -14,17 +14,17 @@ const Template: ComponentStory<typeof TodoFilter> = (args) => (
 export const All = Template.bind({})
 All.args = {
     mode: 'all',
-    setMode: (_: ITodoFilter) => {},
+    setMode: (_: TodoFilterType) => {},
 }
 
 export const Done = Template.bind({})
 Done.args = {
     mode: 'done',
-    setMode: (_: ITodoFilter) => {},
+    setMode: (_: TodoFilterType) => {},
 }
 
 export const Todo = Template.bind({})
 Todo.args = {
     mode: 'todo',
-    setMode: (_: ITodoFilter) => {},
+    setMode: (_: TodoFilterType) => {},
 }

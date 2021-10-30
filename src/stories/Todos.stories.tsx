@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { ITodoList } from 'app/Types/Todo'
+import { TodoListType } from 'app/Types/Todo'
 import ExampleTodos from '../app/Data/Todos'
 import Todos from '../app/Layouts/Todos'
 
@@ -20,5 +20,5 @@ export const EmptyList = Template.bind({})
 EmptyList.args = {
     todos: [],
     list: [],
-    setTodos: (_: ITodoList) => {},
+    setTodos: (_: TodoListType) => {},
 }

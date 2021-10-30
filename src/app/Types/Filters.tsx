@@ -1,1 +1,1 @@
-export type ITodoFilter = 'all' | 'done' | 'todo'
+export type TodoFilterType = 'all' | 'done' | 'todo'

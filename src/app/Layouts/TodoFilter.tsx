@@ -1,11 +1,11 @@
-import { ITodoFilter } from 'app/Types/Filters'
+import { TodoFilterType } from 'app/Types/Filters'
 
-export interface ITodoFilterProps {
-    mode: ITodoFilter
-    setMode: (mode: ITodoFilter) => void
+export interface TodoFilterInterface {
+    mode: TodoFilterType
+    setMode: (mode: TodoFilterType) => void
 }
 
-export default function TodoFilter({ mode, setMode }: ITodoFilterProps) {
+export default function TodoFilter({ mode, setMode }: TodoFilterInterface) {
     return (
         <div>
             <button onClick={() => setMode('all')}>

@@ -1,13 +1,11 @@
-import { ITodo } from 'app/Types/Todo'
+import { TodoType } from 'app/Types/Todo'
 
-export interface ITodoProps extends ITodo {}
+export interface TodoInterface extends TodoType {}
 
-export default function Todo({ title }: ITodoProps) {
+export default function Todo({ title }: TodoInterface) {
     return (
         <div>
             <span>{title}</span>
-            <br />
-            <br />
         </div>
     )
 }

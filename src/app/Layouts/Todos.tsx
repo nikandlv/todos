@@ -1,10 +1,10 @@
-import { ITodoList } from 'app/Types/Todo'
+import { TodoListType } from 'app/Types/Todo'
 import Todo from 'app/Components/Todo'
-export interface ITodosProps {
-    todos: ITodoList
+export interface TodosInterface {
+    todos: TodoListType
 }
 
-export default function Todos({ todos }: ITodosProps) {
+export default function Todos({ todos }: TodosInterface) {
     return (
         <div>
             {todos.map((todo) => (

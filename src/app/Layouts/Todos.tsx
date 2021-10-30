@@ -1,9 +1,9 @@
-import { ITodoList } from 'app/Types/Todo'
+import { TodoListType } from 'app/Types/Todo'
 import Todo from 'app/Components/Todo'
 import { useCallback } from 'react'
 export interface ITodosProps {
-    todos: ITodoList
-    setTodos: (todos: ITodoList) => void
+    todos: TodoListType
+    setTodos: (todos: TodoListType) => void
 }
 
 export default function Todos({ todos, setTodos }: ITodosProps) {

@@ -1,6 +1,6 @@
 import { TodoType } from 'app/Types/Todo'
 
-export interface ITodoProps extends TodoType {
+export interface TodoInterface extends TodoType {
     onChange?: (id: number, checked: boolean) => void
     onDelete?: (id: number) => void
 }
@@ -11,7 +11,7 @@ export default function Todo({
     checked,
     onChange,
     onDelete,
-}: ITodoProps) {
+}: TodoInterface) {
     return (
         <div>
             <input

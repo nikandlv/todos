@@ -1,3 +1,15 @@
+import { useState } from 'react'
+import ExampleTodos from './Data/Todos'
+import TodoForm from './Layouts/TodoForm'
+import Todos from './Layouts/Todos'
+import Wrapper from './Layouts/Wrapper'
+
 export default function App() {
-    return <div>Hello!</div>
+    const [todos, setTodos] = useState(ExampleTodos)
+    return (
+        <Wrapper>
+            <Todos todos={todos} setTodos={setTodos} />
+            <TodoForm todos={todos} setTodos={setTodos} />
+        </Wrapper>
+    )
 }

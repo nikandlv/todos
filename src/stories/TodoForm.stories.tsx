@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { ITodoList } from 'app/Types/Todo'
+import { TodoListType } from 'app/Types/Todo'
 import TodoForm from '../app/Layouts/TodoForm'
 
 export default {
@@ -14,5 +14,5 @@ const Template: ComponentStory<typeof TodoForm> = (args) => (
 export const SimpleForm = Template.bind({})
 SimpleForm.args = {
     todos: [],
-    setTodos: (_: ITodoList) => {},
+    setTodos: (_: TodoListType) => {},
 }

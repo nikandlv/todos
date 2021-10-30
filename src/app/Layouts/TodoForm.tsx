@@ -1,12 +1,12 @@
-import { ITodoList } from 'app/Types/Todo'
+import { TodoListType } from 'app/Types/Todo'
 import * as React from 'react'
 
-export interface ITodoFormProps {
-    todos: ITodoList
-    setTodos: (todos: ITodoList) => void
+export interface TodoFormInterface {
+    todos: TodoListType
+    setTodos: (todos: TodoListType) => void
 }
 
-export default function TodoForm({ todos, setTodos }: ITodoFormProps) {
+export default function TodoForm({ todos, setTodos }: TodoFormInterface) {
     const titleInputRef = React.useRef<HTMLInputElement | null>(null)
     const submit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()

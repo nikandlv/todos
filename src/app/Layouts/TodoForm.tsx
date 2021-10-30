@@ -17,7 +17,7 @@ export default function TodoForm({ todos, setTodos }: ITodoFormProps) {
         setTodos([
             ...todos,
             {
-                id: Math.random() * 10000,
+                id: Math.random(),
                 title,
                 checked: false,
             },

@@ -13,11 +13,11 @@ yet another todo list web app written using ReactJS
 
 ## Progress
 
--   [ ] Add mock data
--   [ ] List of todos
--   [ ] Add todos
--   [ ] Check todos
--   [ ] Delete Todos
+-   [x] Add mock data
+-   [x] List of todos
+-   [x] Add todos
+-   [x] Check todos
+-   [x] Delete Todos
 -   [ ] Filter todos
 
 ## Demo
@@ -75,6 +75,8 @@ Todos! has support for storybook for documentation and previews of the component
 
 -   `Components` contains the components of our project
 -   `Layouts` contains the layouts and containers of our project
+-   `Data` contains the constant data accross the app
+-   `Types` contains the types of our app
 
 #### Branching and versioning
 
